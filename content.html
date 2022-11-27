@@ -2,14 +2,14 @@
 <html>
 <head>
     <title>content</title>
-    <link rel="stylesheet" href="/-/static/app.css?7bac29">
+    <link rel="stylesheet" href="/pages-experiment/-/static/app.css?7bac29">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<link rel="alternate" type="application/json+datasette" href="http://localhost/content.json"><script src="/-/static/sql-formatter-2.3.3.min.js" defer></script>
-<script src="/-/static/codemirror-5.57.0.min.js"></script>
-<link rel="stylesheet" href="/-/static/codemirror-5.57.0.min.css" />
-<script src="/-/static/codemirror-5.57.0-sql.min.js"></script>
-<script src="/-/static/cm-resize-1.0.1.min.js"></script>
+<link rel="alternate" type="application/json+datasette" href="http://localhost/pages-experiment/pages-experiment/content.json"><script src="/pages-experiment/-/static/sql-formatter-2.3.3.min.js" defer></script>
+<script src="/pages-experiment/-/static/codemirror-5.57.0.min.js"></script>
+<link rel="stylesheet" href="/pages-experiment/-/static/codemirror-5.57.0.min.css" />
+<script src="/pages-experiment/-/static/codemirror-5.57.0-sql.min.js"></script>
+<script src="/pages-experiment/-/static/cm-resize-1.0.1.min.js"></script>
 <style>
     .CodeMirror { height: auto; min-height: 70px; width: 80%; border: 1px solid #ddd; }
     .cm-resize-handle {
@@ -27,7 +27,7 @@
   
     <p class="crumbs">
       
-        <a href="/">home</a>
+        <a href="/pages-experiment/">home</a>
         
       
     </p>
@@ -54,7 +54,7 @@
 
 
 
-    <form class="sql" action="/content" method="get">
+    <form class="sql" action="/pages-experiment/content" method="get">
         <h3>Custom SQL query</h3>
         <p><textarea id="sql-editor" name="sql">select * from assets</textarea></p>
         <p>
@@ -75,7 +75,7 @@
 
 
 <div class="db-table">
-    <h3><a href="/content/assets">assets</a></h3>
+    <h3><a href="/pages-experiment/content/assets">assets</a></h3>
     <p><em>url, id, node_id, name, label, uploader, content_type, state, size, download_count, created_at, updated_at, browser_download_url, release</em></p>
     <p>6 rows</p>
 </div>
@@ -83,7 +83,7 @@
 
 
 <div class="db-table">
-    <h3><a href="/content/datasette_repos">datasette_repos</a></h3>
+    <h3><a href="/pages-experiment/content/datasette_repos">datasette_repos</a></h3>
     <p><em>id, nameWithOwner, createdAt, openGraphImageUrl, usesCustomOpenGraphImage, openIssueCount, closedIssueCount, releaseCount, topics, latest_commit</em></p>
     <p>141 rows</p>
 </div>
@@ -91,7 +91,7 @@
 
 
 <div class="db-table">
-    <h3><a href="/content/example_csvs">example_csvs</a></h3>
+    <h3><a href="/pages-experiment/content/example_csvs">example_csvs</a></h3>
     <p><em>url, name, table_name, source, source_url, about, about_url, description</em></p>
     <p>2 rows</p>
 </div>
@@ -99,7 +99,7 @@
 
 
 <div class="db-table">
-    <h3><a href="/content/licenses">licenses</a></h3>
+    <h3><a href="/pages-experiment/content/licenses">licenses</a></h3>
     <p><em>key, name, spdx_id, url, node_id</em></p>
     <p>1 row</p>
 </div>
@@ -107,7 +107,7 @@
 
 
 <div class="db-table">
-    <h3><a href="/content/news">news</a></h3>
+    <h3><a href="/pages-experiment/content/news">news</a></h3>
     <p><em>date, body</em></p>
     <p>91 rows</p>
 </div>
@@ -115,7 +115,7 @@
 
 
 <div class="db-table">
-    <h3><a href="/content/plugin_repos">plugin_repos</a></h3>
+    <h3><a href="/pages-experiment/content/plugin_repos">plugin_repos</a></h3>
     <p><em>repo, tags</em></p>
     <p>102 rows</p>
 </div>
@@ -123,7 +123,7 @@
 
 
 <div class="db-table">
-    <h3><a href="/content/pypi_packages">pypi_packages</a></h3>
+    <h3><a href="/pages-experiment/content/pypi_packages">pypi_packages</a></h3>
     <p><em>name, summary, classifiers, description, author, author_email, description_content_type, home_page, keywords, license, maintainer, maintainer_email, package_url, platform, project_url, project_urls, release_url, requires_dist, requires_python, version, yanked, yanked_reason</em></p>
     <p>142 rows</p>
 </div>
@@ -131,7 +131,7 @@
 
 
 <div class="db-table">
-    <h3><a href="/content/pypi_releases">pypi_releases</a></h3>
+    <h3><a href="/pages-experiment/content/pypi_releases">pypi_releases</a></h3>
     <p><em>md5_digest, package, version, packagetype, filename, comment_text, digests, has_sig, python_version, requires_python, size, upload_time, upload_time_iso_8601, url, yanked, yanked_reason</em></p>
     <p>1,800 rows</p>
 </div>
@@ -139,7 +139,7 @@
 
 
 <div class="db-table">
-    <h3><a href="/content/pypi_versions">pypi_versions</a></h3>
+    <h3><a href="/pages-experiment/content/pypi_versions">pypi_versions</a></h3>
     <p><em>id, package, name</em></p>
     <p>1,113 rows</p>
 </div>
@@ -147,7 +147,7 @@
 
 
 <div class="db-table">
-    <h3><a href="/content/releases">releases</a></h3>
+    <h3><a href="/pages-experiment/content/releases">releases</a></h3>
     <p><em>html_url, id, author, node_id, tag_name, target_commitish, name, draft, prerelease, created_at, published_at, body, repo, reactions, mentions_count</em></p>
     <p>1,066 rows</p>
 </div>
@@ -155,7 +155,7 @@
 
 
 <div class="db-table">
-    <h3><a href="/content/repos">repos</a></h3>
+    <h3><a href="/pages-experiment/content/repos">repos</a></h3>
     <p><em>id, node_id, name, full_name, private, owner, html_url, description, fork, created_at, updated_at, pushed_at, homepage, size, stargazers_count, watchers_count, language, has_issues, has_projects, has_downloads, has_wiki, has_pages, forks_count, archived, disabled, open_issues_count, license, topics, forks, open_issues, watchers, default_branch, permissions, temp_clone_token, organization, network_count, subscribers_count, readme, readme_html, allow_forking, visibility, is_template, template_repository, web_commit_signoff_required, has_discussions</em></p>
     <p>142 rows</p>
 </div>
@@ -163,7 +163,7 @@
 
 
 <div class="db-table">
-    <h3><a href="/content/stats">stats</a></h3>
+    <h3><a href="/pages-experiment/content/stats">stats</a></h3>
     <p><em>package, date, downloads</em></p>
     <p>74,655 rows</p>
 </div>
@@ -171,7 +171,7 @@
 
 
 <div class="db-table">
-    <h3><a href="/content/tool_repos">tool_repos</a></h3>
+    <h3><a href="/pages-experiment/content/tool_repos">tool_repos</a></h3>
     <p><em>repo</em></p>
     <p>40 rows</p>
 </div>
@@ -179,7 +179,7 @@
 
 
 <div class="db-table">
-    <h3><a href="/content/tutorials">tutorials</a></h3>
+    <h3><a href="/pages-experiment/content/tutorials">tutorials</a></h3>
     <p><em>path, title, body</em></p>
     <p>3 rows</p>
 </div>
@@ -187,7 +187,7 @@
 
 
 <div class="db-table">
-    <h3><a href="/content/users">users</a></h3>
+    <h3><a href="/pages-experiment/content/users">users</a></h3>
     <p><em>login, id, node_id, avatar_url, gravatar_id, html_url, type, site_admin, name</em></p>
     <p>8 rows</p>
 </div>
@@ -195,7 +195,7 @@
 
 
 <div class="db-table">
-    <h3><a href="/content/uses">uses</a></h3>
+    <h3><a href="/pages-experiment/content/uses">uses</a></h3>
     <p><em>_id, _path, text, html, title, summary, order</em></p>
     <p>8 rows</p>
 </div>
@@ -243,18 +243,18 @@
 
 
 
-    <p>... and <a href="/content?_show_hidden=1">20 hidden tables</a></p>
+    <p>... and <a href="/pages-experiment/content?_show_hidden=1">20 hidden tables</a></p>
 
 
 
     <h2 id="views">Views</h2>
     <ul class="bullets">
         
-            <li><a href="/content/recent_releases">recent_releases</a></li>
+            <li><a href="/pages-experiment/content/recent_releases">recent_releases</a></li>
         
-            <li><a href="/content/plugins">plugins</a></li>
+            <li><a href="/pages-experiment/content/plugins">plugins</a></li>
         
-            <li><a href="/content/tools">tools</a></li>
+            <li><a href="/pages-experiment/content/tools">tools</a></li>
         
     </ul>
 
@@ -304,7 +304,7 @@ window.onload = () => {
 </section>
 </div>
 <footer class="ft">Powered by <a href="https://datasette.io/" title="Datasette v0.63.2">Datasette</a>
-&middot; Queries took 37.598ms
+&middot; Queries took 37.201ms
 
     
     

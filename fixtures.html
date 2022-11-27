@@ -2,14 +2,14 @@
 <html>
 <head>
     <title>fixtures</title>
-    <link rel="stylesheet" href="/-/static/app.css?7bac29">
+    <link rel="stylesheet" href="/pages-experiment/-/static/app.css?7bac29">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<link rel="alternate" type="application/json+datasette" href="http://localhost/fixtures.json"><script src="/-/static/sql-formatter-2.3.3.min.js" defer></script>
-<script src="/-/static/codemirror-5.57.0.min.js"></script>
-<link rel="stylesheet" href="/-/static/codemirror-5.57.0.min.css" />
-<script src="/-/static/codemirror-5.57.0-sql.min.js"></script>
-<script src="/-/static/cm-resize-1.0.1.min.js"></script>
+<link rel="alternate" type="application/json+datasette" href="http://localhost/pages-experiment/pages-experiment/fixtures.json"><script src="/pages-experiment/-/static/sql-formatter-2.3.3.min.js" defer></script>
+<script src="/pages-experiment/-/static/codemirror-5.57.0.min.js"></script>
+<link rel="stylesheet" href="/pages-experiment/-/static/codemirror-5.57.0.min.css" />
+<script src="/pages-experiment/-/static/codemirror-5.57.0-sql.min.js"></script>
+<script src="/pages-experiment/-/static/cm-resize-1.0.1.min.js"></script>
 <style>
     .CodeMirror { height: auto; min-height: 70px; width: 80%; border: 1px solid #ddd; }
     .cm-resize-handle {
@@ -27,7 +27,7 @@
   
     <p class="crumbs">
       
-        <a href="/">home</a>
+        <a href="/pages-experiment/">home</a>
         
       
     </p>
@@ -54,7 +54,7 @@
 
 
 
-    <form class="sql" action="/fixtures" method="get">
+    <form class="sql" action="/pages-experiment/fixtures" method="get">
         <h3>Custom SQL query</h3>
         <p><textarea id="sql-editor" name="sql">select * from [123_starts_with_digits]</textarea></p>
         <p>
@@ -75,7 +75,7 @@
 
 
 <div class="db-table">
-    <h3><a href="/fixtures/123_starts_with_digits">123_starts_with_digits</a></h3>
+    <h3><a href="/pages-experiment/fixtures/123_starts_with_digits">123_starts_with_digits</a></h3>
     <p><em>content</em></p>
     <p>0 rows</p>
 </div>
@@ -83,7 +83,7 @@
 
 
 <div class="db-table">
-    <h3><a href="/fixtures/Table+With+Space+In+Name">Table With Space In Name</a></h3>
+    <h3><a href="/pages-experiment/fixtures/Table+With+Space+In+Name">Table With Space In Name</a></h3>
     <p><em>pk, content</em></p>
     <p>0 rows</p>
 </div>
@@ -91,7 +91,7 @@
 
 
 <div class="db-table">
-    <h3><a href="/fixtures/attraction_characteristic">attraction_characteristic</a></h3>
+    <h3><a href="/pages-experiment/fixtures/attraction_characteristic">attraction_characteristic</a></h3>
     <p><em>pk, name</em></p>
     <p>2 rows</p>
 </div>
@@ -99,7 +99,7 @@
 
 
 <div class="db-table">
-    <h3><a href="/fixtures/binary_data">binary_data</a></h3>
+    <h3><a href="/pages-experiment/fixtures/binary_data">binary_data</a></h3>
     <p><em>data</em></p>
     <p>3 rows</p>
 </div>
@@ -107,7 +107,7 @@
 
 
 <div class="db-table">
-    <h3><a href="/fixtures/complex_foreign_keys">complex_foreign_keys</a></h3>
+    <h3><a href="/pages-experiment/fixtures/complex_foreign_keys">complex_foreign_keys</a></h3>
     <p><em>pk, f1, f2, f3</em></p>
     <p>1 row</p>
 </div>
@@ -115,7 +115,7 @@
 
 
 <div class="db-table">
-    <h3><a href="/fixtures/compound_primary_key">compound_primary_key</a></h3>
+    <h3><a href="/pages-experiment/fixtures/compound_primary_key">compound_primary_key</a></h3>
     <p><em>pk1, pk2, content</em></p>
     <p>2 rows</p>
 </div>
@@ -123,7 +123,7 @@
 
 
 <div class="db-table">
-    <h3><a href="/fixtures/compound_three_primary_keys">compound_three_primary_keys</a></h3>
+    <h3><a href="/pages-experiment/fixtures/compound_three_primary_keys">compound_three_primary_keys</a></h3>
     <p><em>pk1, pk2, pk3, content</em></p>
     <p>1,001 rows</p>
 </div>
@@ -131,7 +131,7 @@
 
 
 <div class="db-table">
-    <h3><a href="/fixtures/custom_foreign_key_label">custom_foreign_key_label</a></h3>
+    <h3><a href="/pages-experiment/fixtures/custom_foreign_key_label">custom_foreign_key_label</a></h3>
     <p><em>pk, foreign_key_with_custom_label</em></p>
     <p>1 row</p>
 </div>
@@ -139,7 +139,7 @@
 
 
 <div class="db-table">
-    <h3><a href="/fixtures/facet_cities">facet_cities</a></h3>
+    <h3><a href="/pages-experiment/fixtures/facet_cities">facet_cities</a></h3>
     <p><em>id, name</em></p>
     <p>4 rows</p>
 </div>
@@ -147,7 +147,7 @@
 
 
 <div class="db-table">
-    <h3><a href="/fixtures/facetable">facetable</a></h3>
+    <h3><a href="/pages-experiment/fixtures/facetable">facetable</a></h3>
     <p><em>pk, created, planet_int, on_earth, state, _city_id, _neighborhood, tags, complex_array, distinct_some_null, n</em></p>
     <p>15 rows</p>
 </div>
@@ -155,7 +155,7 @@
 
 
 <div class="db-table">
-    <h3><a href="/fixtures/foreign_key_references">foreign_key_references</a></h3>
+    <h3><a href="/pages-experiment/fixtures/foreign_key_references">foreign_key_references</a></h3>
     <p><em>pk, foreign_key_with_label, foreign_key_with_blank_label, foreign_key_with_no_label, foreign_key_compound_pk1, foreign_key_compound_pk2</em></p>
     <p>2 rows</p>
 </div>
@@ -163,7 +163,7 @@
 
 
 <div class="db-table">
-    <h3><a href="/fixtures/infinity">infinity</a></h3>
+    <h3><a href="/pages-experiment/fixtures/infinity">infinity</a></h3>
     <p><em>value</em></p>
     <p>3 rows</p>
 </div>
@@ -171,7 +171,7 @@
 
 
 <div class="db-table">
-    <h3><a href="/fixtures/no_primary_key">no_primary_key</a></h3>
+    <h3><a href="/pages-experiment/fixtures/no_primary_key">no_primary_key</a></h3>
     <p><em>content, a, b, c</em></p>
     <p>201 rows</p>
 </div>
@@ -179,7 +179,7 @@
 
 
 <div class="db-table">
-    <h3><a href="/fixtures/primary_key_multiple_columns">primary_key_multiple_columns</a></h3>
+    <h3><a href="/pages-experiment/fixtures/primary_key_multiple_columns">primary_key_multiple_columns</a></h3>
     <p><em>id, content, content2</em></p>
     <p>1 row</p>
 </div>
@@ -187,7 +187,7 @@
 
 
 <div class="db-table">
-    <h3><a href="/fixtures/primary_key_multiple_columns_explicit_label">primary_key_multiple_columns_explicit_label</a></h3>
+    <h3><a href="/pages-experiment/fixtures/primary_key_multiple_columns_explicit_label">primary_key_multiple_columns_explicit_label</a></h3>
     <p><em>id, content, content2</em></p>
     <p>1 row</p>
 </div>
@@ -195,7 +195,7 @@
 
 
 <div class="db-table">
-    <h3><a href="/fixtures/roadside_attraction_characteristics">roadside_attraction_characteristics</a></h3>
+    <h3><a href="/pages-experiment/fixtures/roadside_attraction_characteristics">roadside_attraction_characteristics</a></h3>
     <p><em>attraction_id, characteristic_id</em></p>
     <p>5 rows</p>
 </div>
@@ -203,7 +203,7 @@
 
 
 <div class="db-table">
-    <h3><a href="/fixtures/roadside_attractions">roadside_attractions</a></h3>
+    <h3><a href="/pages-experiment/fixtures/roadside_attractions">roadside_attractions</a></h3>
     <p><em>pk, name, address, url, latitude, longitude</em></p>
     <p>4 rows</p>
 </div>
@@ -211,7 +211,7 @@
 
 
 <div class="db-table">
-    <h3><a href="/fixtures/searchable">searchable</a></h3>
+    <h3><a href="/pages-experiment/fixtures/searchable">searchable</a></h3>
     <p><em>pk, text1, text2, name with . and spaces</em></p>
     <p>2 rows</p>
 </div>
@@ -219,7 +219,7 @@
 
 
 <div class="db-table">
-    <h3><a href="/fixtures/searchable_tags">searchable_tags</a></h3>
+    <h3><a href="/pages-experiment/fixtures/searchable_tags">searchable_tags</a></h3>
     <p><em>searchable_id, tag</em></p>
     <p>2 rows</p>
 </div>
@@ -227,7 +227,7 @@
 
 
 <div class="db-table">
-    <h3><a href="/fixtures/select">select</a></h3>
+    <h3><a href="/pages-experiment/fixtures/select">select</a></h3>
     <p><em>group, having, and, json</em></p>
     <p>1 row</p>
 </div>
@@ -235,7 +235,7 @@
 
 
 <div class="db-table">
-    <h3><a href="/fixtures/simple_primary_key">simple_primary_key</a></h3>
+    <h3><a href="/pages-experiment/fixtures/simple_primary_key">simple_primary_key</a></h3>
     <p><em>id, content</em></p>
     <p>5 rows</p>
 </div>
@@ -243,7 +243,7 @@
 
 
 <div class="db-table">
-    <h3><a href="/fixtures/sortable">sortable</a></h3>
+    <h3><a href="/pages-experiment/fixtures/sortable">sortable</a></h3>
     <p><em>pk1, pk2, content, sortable, sortable_with_nulls, sortable_with_nulls_2, text</em></p>
     <p>201 rows</p>
 </div>
@@ -251,7 +251,7 @@
 
 
 <div class="db-table">
-    <h3><a href="/fixtures/table~2Fwith~2Fslashes~2Ecsv">table/with/slashes.csv</a></h3>
+    <h3><a href="/pages-experiment/fixtures/table~2Fwith~2Fslashes~2Ecsv">table/with/slashes.csv</a></h3>
     <p><em>pk, content</em></p>
     <p>1 row</p>
 </div>
@@ -259,7 +259,7 @@
 
 
 <div class="db-table">
-    <h3><a href="/fixtures/tags">tags</a></h3>
+    <h3><a href="/pages-experiment/fixtures/tags">tags</a></h3>
     <p><em>tag</em></p>
     <p>2 rows</p>
 </div>
@@ -267,7 +267,7 @@
 
 
 <div class="db-table">
-    <h3><a href="/fixtures/units">units</a></h3>
+    <h3><a href="/pages-experiment/fixtures/units">units</a></h3>
     <p><em>pk, distance, frequency</em></p>
     <p>3 rows</p>
 </div>
@@ -285,20 +285,20 @@
 
 
 
-    <p>... and <a href="/fixtures?_show_hidden=1">5 hidden tables</a></p>
+    <p>... and <a href="/pages-experiment/fixtures?_show_hidden=1">5 hidden tables</a></p>
 
 
 
     <h2 id="views">Views</h2>
     <ul class="bullets">
         
-            <li><a href="/fixtures/paginated_view">paginated_view</a></li>
+            <li><a href="/pages-experiment/fixtures/paginated_view">paginated_view</a></li>
         
-            <li><a href="/fixtures/simple_view">simple_view</a></li>
+            <li><a href="/pages-experiment/fixtures/simple_view">simple_view</a></li>
         
-            <li><a href="/fixtures/searchable_view">searchable_view</a></li>
+            <li><a href="/pages-experiment/fixtures/searchable_view">searchable_view</a></li>
         
-            <li><a href="/fixtures/searchable_view_configured_by_metadata">searchable_view_configured_by_metadata</a></li>
+            <li><a href="/pages-experiment/fixtures/searchable_view_configured_by_metadata">searchable_view_configured_by_metadata</a></li>
         
     </ul>
 
@@ -348,7 +348,7 @@ window.onload = () => {
 </section>
 </div>
 <footer class="ft">Powered by <a href="https://datasette.io/" title="Datasette v0.63.2">Datasette</a>
-&middot; Queries took 22.329ms
+&middot; Queries took 18.98ms
 
     
     
