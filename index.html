@@ -1,1 +1,83 @@
-<h1>Hello</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Datasette: fixtures, content</title>
+    <link rel="stylesheet" href="/-/static/app.css?7bac29">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="alternate" type="application/json+datasette" href="http://localhost/.json"></head>
+<body class="index">
+<div class="not-footer">
+<header><nav>
+  
+  
+    <p class="crumbs">
+      
+        <a href="/">home</a>
+        
+      
+    </p>
+  
+
+    
+    
+</nav></header>
+
+
+
+    
+
+
+
+<section class="content">
+
+<h1>Datasette</h1>
+
+
+
+
+
+    <h2 style="padding-left: 10px; border-left: 10px solid #9403e5"><a href="/fixtures">fixtures</a></h2>
+    <p>
+        1,463 rows in 25 tables, 6 rows in 5 hidden tables, 4 views
+        
+    </p>
+    <p><a href="/fixtures/compound_three_primary_keys" title="1001 rows">compound_three_primary_keys</a>, <a href="/fixtures/sortable" title="201 rows">sortable</a>, <a href="/fixtures/no_primary_key" title="201 rows">no_primary_key</a>, <a href="/fixtures/facetable" title="15 rows">facetable</a>, <a href="/fixtures/simple_primary_key" title="5 rows">simple_primary_key</a>, <a href="/fixtures">...</a></p>
+
+    <h2 style="padding-left: 10px; border-left: 10px solid #9a0364"><a href="/content">content</a></h2>
+    <p>
+        79,320 rows in 16 tables, 2,784 rows in 20 hidden tables, 3 views
+        
+    </p>
+    <p><a href="/content/stats" title="74655 rows">stats</a>, <a href="/content/pypi_releases" title="1800 rows">pypi_releases</a>, <a href="/content/pypi_versions" title="1113 rows">pypi_versions</a>, <a href="/content/releases" title="1066 rows">releases</a>, <a href="/content/repos" title="142 rows">repos</a>, <a href="/content">...</a></p>
+
+
+
+</section>
+</div>
+<footer class="ft">Powered by <a href="https://datasette.io/" title="Datasette v0.63.2">Datasette</a>
+
+</footer>
+
+<script>
+document.body.addEventListener('click', (ev) => {
+    /* Close any open details elements that this click is outside of */
+    var target = ev.target;
+    var detailsClickedWithin = null;
+    while (target && target.tagName != 'DETAILS') {
+        target = target.parentNode;
+    }
+    if (target && target.tagName == 'DETAILS') {
+        detailsClickedWithin = target;
+    }
+    Array.from(document.getElementsByTagName('details')).filter(
+        (details) => details.open && details != detailsClickedWithin
+    ).forEach(details => details.open = false);
+});
+</script>
+
+
+
+<!-- Templates considered: *index.html -->
+</body>
+</html>
