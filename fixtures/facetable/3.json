@@ -1,0 +1,1 @@
+{"database": "fixtures", "table": "facetable", "rows": [[3, "2019-01-14 08:00:00", 1, 1, "CA", 1, "SOMA", "[]", "[]", null, null]], "columns": ["pk", "created", "planet_int", "on_earth", "state", "_city_id", "_neighborhood", "tags", "complex_array", "distinct_some_null", "n"], "primary_keys": ["pk"], "primary_key_values": ["3"], "units": {}, "query_ms": 0.3879269352182746}
